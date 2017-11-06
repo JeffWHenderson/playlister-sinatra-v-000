@@ -1,4 +1,4 @@
-<% raise @artist.song_genres.inspect %>
+<% raise @artist.songs.inspect %>
 <% @artist.songs.each do |song| %>
   <p><a href="/songs/<%= song.slug %>"><%= song.name %> </a></p>
 <% end %>
