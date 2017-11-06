@@ -1,6 +1,6 @@
 genres show
   <% @genre.songs.each do |song| %>
-    <a href="/songs/<%= song.slug %>"><%= song.name %> </a>
+    <p><a href="/songs/<%= song.slug %>"><%= song.name %> </a></p>
   <% end %>
 
   <% @genre.artists.each do |artist| %>
