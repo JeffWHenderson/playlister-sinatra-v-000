@@ -47,4 +47,3 @@ flash[:message] = "Successfully created song."
     redirect("/songs/#{@song.slug}")
   end
 end
-
