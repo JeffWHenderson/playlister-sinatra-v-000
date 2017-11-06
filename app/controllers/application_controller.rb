@@ -1,6 +1,10 @@
 require 'rack-flash'
 class ApplicationController < Sinatra::Base
+
   use Rack::Flash
+  include Slugifiable::InstanceMethods
+  extend Slugifiable::ClassMethods
+
   register Sinatra::ActiveRecordExtension
   set :session_secret, "my_application_secret"
   set :views, Proc.new { File.join(root, "../views/") }
