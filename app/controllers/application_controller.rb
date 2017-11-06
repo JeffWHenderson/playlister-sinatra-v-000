@@ -6,4 +6,21 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
+
+#========== MOVE TO GENRESCONTROLLER ============
+  get '/genres' do
+    @genres = Genre.all
+    erb :'/genres/index'
+  end
+#========== MOVE TO ARTISTSCONTROLLER ============
+  get '/artists' do
+    @artists = Artist.all
+    erb :'/artists/index'
+  end
+#========== MOVE TO SONGSCONTROLLER ============
+  get '/songs' do
+    @songs = Song.all
+    erb :'/songs/index'
+  end
+
 end
