@@ -1,7 +1,7 @@
 <h1><%= @artist.slug.upcase %></h1>
 <h3>songs</h3>
 <% @artist.songs.each do |song| %>
-  <p><a href="/songs/<%= song.slug %>"><%= raise song.name %> </a></p>
+  <p><a href="/songs/<%= song.slug %>"><%= song.name %> </a></p>
 <% end %>
 <h3>genres</h3>
 <% @artist.genres.each do |genre| %>
