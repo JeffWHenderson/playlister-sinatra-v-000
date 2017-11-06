@@ -12,6 +12,11 @@ class ApplicationController < Sinatra::Base
     @genres = Genre.all
     erb :'/genres/index'
   end
+
+  get '/genres/:slug' do
+    @genre = Genre.find_by_slug(params[:slug])
+    erb :'genres/show'
+  end
 #========== MOVE TO ARTISTSCONTROLLER ============
   get '/artists' do
     @artists = Artist.all
