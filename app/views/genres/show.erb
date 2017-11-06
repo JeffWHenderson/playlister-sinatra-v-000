@@ -1,4 +1,4 @@
-genres show
+<%= @genre.name %>
   <% @genre.songs.each do |song| %>
     <p><a href="/songs/<%= song.slug %>"><%= song.name %> </a></p>
   <% end %>
