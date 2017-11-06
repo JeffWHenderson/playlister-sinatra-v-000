@@ -5,5 +5,5 @@
   <% end %>
 <h3>Artists</h3>
   <% @genre.artists.each do |artist| %>
-    <p><a href="/artists/<%= artist.slug %>"><%= artist.name %> </a></p>
+    <a href="/artists/<%= artist.slug %>"><%= artist.name  \t\t %> </a>
   <% end %>
