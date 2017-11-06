@@ -30,3 +30,4 @@ class ApplicationController < Sinatra::Base
     erb :'artists/show'
   end
 #========== MOVE TO SONGSCONTROLLER ============
+end
